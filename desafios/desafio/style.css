@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right,#A69CA2,#2A3659,#292F40,#8C6C5A);
+}
+div{
+   
+    text-align: center;
+   
+ 
+}
+h1{
+    color: white;
+}
+a{
+    color: white;
+}

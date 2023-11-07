@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkis</title>
+    <style>
+        /*
+           SELETORES PERSONALIZADOS 
+        #  = id 
+        .  = class
+        :  = pseudo da class
+        ::  = pseudo-element
+        >  = children */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: #D92525;
+            text-decoration: none;
+            font-weight: bold;
+        }
+     a:visited{
+        color: #832e2e;
+     }
+     a:hover{
+        color: #14140F;
+        text-decoration:underline;
+     }
+     a:active{
+        color: #F2E52E;
+     }
+     .especial{
+        background-color: #D92525;
+        
+     }
+     
+     .especial::before{
+        content:'⇒ ' ;
+     }
+     .especial::after{
+        content: ' ⇐';
+       
+       
+     }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/15%20-Seletores%20personalizados.pdf" class="especial">RepositórioGihHub</a></li>
+        <li><a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ">canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/sobre/">Site do Curso em Video</a></li>
+    </ul>
+    
+</body>
+</html>
