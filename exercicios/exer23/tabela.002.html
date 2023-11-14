@@ -6,46 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela</title>
     <style>
-        body{
+        body {
             font-family: Arial, Helvetica, sans-serif;
 
         }
-        table{
+
+        table {
             width: 500px;
             border-collapse: collapse;
         }
-        td ,th{
+
+        td, th {
             border: 1px solid black;
             padding: 10px;
         }
-        thead{
-            background-color:gray;
+
+        thead {
+            background-color: gray;
             color: white;
         }
-        tfoot{
-         background-color: grey;
+        caption{
+            font-size: 1,5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+
+        tfoot {
+            background-color: grey;
             color: white;
         }
-        td.num{
+
+        td.num {
             text-align: right;
         }
     </style>
 </head>
 
 <body>
+
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
-    
+
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td class="num">44 411 238	</td>
+                <td class="num">44 411 238</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
@@ -68,7 +84,7 @@
                 <td class="num">10 882 965</td>
             </tr>
             <tr>
-                <td>  Pernambuco</td>
+                <td> Pernambuco</td>
                 <td class="num">9 058 931</td>
             </tr>
             <tr>
@@ -76,34 +92,31 @@
                 <td class="num">8 794 957</td>
             </tr>
             <tr>
-                <td>   Pará</td>
+                <td> Pará</td>
                 <td class="num">8 121 025</td>
             </tr>
             <tr>
-                <td>  Santa Catarina</td>
+                <td> Santa Catarina</td>
                 <td class="num">7 610 3615</td>
             </tr>
             <tr>
-                <td>  Goiás</td>
+                <td> Goiás</td>
                 <td class="num">7 056 495</td>
             </tr>
             <tr>
-                <td>  Maranhão</td>
+                <td> Maranhão</td>
                 <td class="num">6 775 805</td>
             </tr>
-
-
-
 
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Haibitante</th>
+                <th scope="row">Total de Haibitante</th>
                 <td class="num"><strong>219.551.979</strong></td>
             </tr>
 
         </tfoot>
-       
+
 
     </table>
 </body>
