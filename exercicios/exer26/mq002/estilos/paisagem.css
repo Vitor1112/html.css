@@ -1,3 +1,7 @@
 @charset "UTF-8";
 
-/* Aparelho deitado* (Modo landscape)/
+/* Aparelho deitado* (Modo landscape)*/
+body{
+    background-image :url(../imagens/cev-landscape.jpg);
+    background-position: left bottom; /* Para deixa a Imagem fixa no lado esquerdo do canto inferior da tela*/
+}
